@@ -16,14 +16,7 @@ Example: `acf-migrate`
 ### 1. Parse arguments
 Extract `skillName` — kebab-case name for the new skill.
 
-### 2. Ask for save location
-Ask the user where to save the skill:
-- `~/.claude/commands/[skillName].md` — saves as a slash command, invoked with `/[skillName]`
-- `~/.claude/skills/[skillName]/SKILL.md` — saves as an installable skill
-
-Default to `~/.claude/commands/` if they're unsure.
-
-### 3. Understand the workflow
+### 2. Understand the workflow
 Read the current conversation and identify:
 - **Goal** — what does this skill accomplish?
 - **Trigger** — when would someone invoke it?
@@ -36,7 +29,7 @@ If the session is exploratory or contains false starts, extract only the final, 
 
 If the conversation is thin (e.g. the user is describing a skill from scratch rather than demonstrating one), ask clarifying questions before writing — don't guess at missing steps.
 
-### 4. Draft the SKILL.md
+### 3. Draft the SKILL.md
 Write a SKILL.md with this structure:
 
 ```
@@ -78,18 +71,18 @@ Rules for writing good SKILL.md content:
 - No fluff, no preamble, no "here's what I'll do" narration
 - Steps should be granular enough that nothing is left to interpretation
 
-### 5. Show and confirm
+### 4. Show and confirm
 Display the full draft SKILL.md to the user. Ask:
 "Does this look right, or should I adjust anything before saving?"
 
 Wait for confirmation. Apply any requested changes before proceeding.
 
-### 6. Save
-Write the confirmed SKILL.md to the path chosen in step 2.
+### 5. Save
+Write the confirmed SKILL.md to:
+`~/.claude/commands/[skillName].md`
 
 If a file already exists at that path, warn the user and ask before overwriting.
 
-### 7. Report back
+### 6. Report back
 Confirm the file was saved and remind the user how to invoke it:
-- If saved to `commands/`: `/[skillName]`
-- If saved to `skills/`: reference the skill name in your prompt
+`/[skillName]`

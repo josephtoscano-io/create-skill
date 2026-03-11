@@ -35,6 +35,4 @@ At any point in a session where you've built a workflow worth keeping:
 /create-skill [skill-name]
 ```
 
-The skill will ask where you want it saved:
-- `~/.claude/commands/[skill-name].md` — available as `/[skill-name]` in any future session
-- `~/.claude/skills/[skill-name]/SKILL.md` — installable skill format
+The skill saves to `~/.claude/commands/[skill-name].md` and is immediately available as `/[skill-name]` in any future session.
