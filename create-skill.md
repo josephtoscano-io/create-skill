@@ -78,8 +78,9 @@ Display the full draft SKILL.md to the user. Ask:
 Wait for confirmation. Apply any requested changes before proceeding.
 
 ### 5. Save
-Write the confirmed SKILL.md to:
-`C:\Users\joe\.claude\commands\[skillName].md`
+Write the confirmed command to:
+`~/.claude/commands/[skillName].md`
+(on Windows, `%USERPROFILE%\.claude\commands\[skillName].md`)
 
 If a file already exists at that path, warn the user and ask before overwriting.
 
