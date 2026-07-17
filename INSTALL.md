@@ -8,22 +8,25 @@ No other dependencies.
 
 ---
 
-## Option 1 — Clone directly into Claude skills
+## Option 1 — curl the command file
 
 ```bash
-git clone https://github.com/josephtoscano-io/create-skill ~/.claude/skills/create-skill
+curl -o ~/.claude/commands/create-skill.md \
+  https://raw.githubusercontent.com/josephtoscano-io/create-skill/master/create-skill.md
 ```
 
-Restart your Claude Code session. The skill is available immediately.
+On Windows the target is `C:\Users\<you>\.claude\commands\create-skill.md`. Reload Claude Code and run `/create-skill`.
 
 ---
 
 ## Option 2 — Manual install
 
 1. Download or clone this repo
-2. Copy the folder to `~/.claude/skills/create-skill/`
-3. Confirm `SKILL.md` exists at the root of that folder
-4. Restart Claude Code
+2. Copy `create-skill.md` into `~/.claude/commands/`
+   (Windows: `C:\Users\<you>\.claude\commands\`)
+3. Reload Claude Code
+
+Only that one file is needed — the rest of the repo is documentation.
 
 ---
 

@@ -66,7 +66,7 @@ Example: `[...]`
 
 Rules for writing good SKILL.md content:
 - Use imperative voice: "Read the file", not "You should read the file"
-- Be specific — reference actual file paths, CLI commands, patterns where relevant
+- Be specific — reference actual file paths, CLI commands, field names where relevant
 - Include code examples for any non-obvious syntax
 - No fluff, no preamble, no "here's what I'll do" narration
 - Steps should be granular enough that nothing is left to interpretation
@@ -79,7 +79,7 @@ Wait for confirmation. Apply any requested changes before proceeding.
 
 ### 5. Save
 Write the confirmed SKILL.md to:
-`~/.claude/commands/[skillName].md`
+`C:\Users\joe\.claude\commands\[skillName].md`
 
 If a file already exists at that path, warn the user and ask before overwriting.
 

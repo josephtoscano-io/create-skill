@@ -24,7 +24,8 @@ That's it.
 ## Installation
 
 ```bash
-git clone https://github.com/josephtoscano-io/create-skill ~/.claude/skills/create-skill
+curl -o ~/.claude/commands/create-skill.md \
+  https://raw.githubusercontent.com/josephtoscano-io/create-skill/master/create-skill.md
 ```
 
 Restart your Claude Code session.
